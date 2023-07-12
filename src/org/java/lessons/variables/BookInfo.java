@@ -1,4 +1,4 @@
-package org.java.lessons;
+package org.java.lessons.variables;
 
 public class BookInfo {
 
