@@ -28,7 +28,8 @@ public class Main {
     // con queste informazioni creo un oggetto Employee
     Employee employee = new Employee(firstNameInput, lastNameInput, yearsInput, baseSalaryInput);
     // chiedo all'Employee di calcolare il salario attuale
-    System.out.println("Actual salary: " + employee.getActualSalary());
+    System.out.println(
+        "Actual salary of employee " + employee.getFullName() + ": " + employee.getActualSalary());
 
     // chiudo lo scanner
     scan.close();

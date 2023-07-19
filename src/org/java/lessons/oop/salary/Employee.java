@@ -10,15 +10,15 @@ Aggiungere un metodo per calcolare e restituire il salario effettivo dell’impi
 public class Employee {
 
   // CAMPI
-  String firstName;
-  String lastName;
+  private String firstName;
+  private String lastName;
 
-  int years;
+  private int years;
 
-  double baseSalary;
+  private double baseSalary;
 
   // COSTRUTTORI
-  Employee(String firstName, String lastName, int years, double baseSalary) {
+  public Employee(String firstName, String lastName, int years, double baseSalary) {
     this.firstName = firstName;
     this.lastName = lastName;
     this.years = years;
@@ -26,7 +26,7 @@ public class Employee {
   }
 
   // METODI
-  double getActualSalary() {
+  public double getActualSalary() {
     // sul salario base scatta un aumento del 5% ogni 5 anni di servizio
     // variabile per il salario attuale
     double actualSalary = baseSalary;
@@ -37,5 +37,9 @@ public class Employee {
     }
     // restituisco il salario attuale
     return actualSalary;
+  }
+
+  public String getFullName() {
+    return firstName + " " + lastName;
   }
 }
