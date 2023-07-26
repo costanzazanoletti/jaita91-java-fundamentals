@@ -19,9 +19,9 @@ public class Product {
   private HashSet<Category> categories;
 
   // COSTRUTTORI
-  public Product() {
+/*  public Product() {
     this.code = generateCode();
-  }
+  }*/
 
   public Product(String name, String description, BigDecimal price, BigDecimal vat) {
     this.code = generateCode();
@@ -108,5 +108,10 @@ public class Product {
   private int generateCode() {
     Random random = new Random();
     return random.nextInt(1, 10000);
+  }
+
+  @Override
+  public String toString() {
+    return getFullName() + " " + description + ", price: " + getFullPrice() + "€";
   }
 }
