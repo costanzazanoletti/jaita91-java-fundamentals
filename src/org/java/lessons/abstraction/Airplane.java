@@ -7,7 +7,7 @@ public class Airplane implements CanFly {
 
   // COSTRUTTORI
   public Airplane() {
-    fuelLevel = 200;
+    fuelLevel = 300;
   }
 
   // METODI SOLO DI AIRPLANE
